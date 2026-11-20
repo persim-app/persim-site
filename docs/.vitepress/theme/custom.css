@@ -1,0 +1,177 @@
+/* =============================================================
+  Reminder — Home Page Styles
+  Compatible with VitePress default theme (light + dark)
+  ============================================================= */
+
+/* ─── Brand + AdvancedHome layout tokens — light ─────────────── */
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-nav-logo-height: 26px;
+  --vp-home-hero-name-background: linear-gradient(135deg, #fb923c 0%, #f97316 60%, #ea580c 100%);
+  --vp-c-brand-1: #f97316;
+  --vp-c-brand-2: #ea580c;
+  --vp-c-brand-3: #c2410c;
+  --vp-c-brand-soft: rgba(249, 115, 22, 0.16);
+  --vp-sidebar-bg-color: #ffffff;
+
+  --ah-navbar-bg: rgba(255, 255, 255, 0.82);
+  --ah-navbar-border: rgba(0, 0, 0, 0.08);
+  --ah-card-bg: #ffffff;
+  --ah-card-shadow: 0 4px 25px rgba(0, 0, 0, 0.07);
+  --ah-card-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.13);
+  --ah-hero-bg: linear-gradient(180deg, #fffaf3 0%, #ffffff 100%);
+  --ah-hero-title-from: #f97316;
+  --ah-hero-title-to: #dc2626;
+  --ah-faq-hover-bg: #f6f6f7;
+  --ah-badge-border: rgba(249, 115, 22, 0.28);
+  --ah-bundle-bg: linear-gradient(135deg, #fff7ed 0%, #fff1e6 100%);
+  --ah-img-border: rgba(0, 0, 0, 0.07);
+  --ah-img-shadow: 0 20px 60px rgba(120, 60, 10, 0.16);
+
+  --vp-sidebar-bg-image:
+    radial-gradient(circle at 20% 80%, rgba(249, 115, 22, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(251, 191, 36, 0.10) 0%, transparent 50%);
+}
+
+/* ─── AdvancedHome layout tokens — dark ──────────────────────── */
+.dark {
+  --vp-sidebar-bg-color: #1b1b1f;
+
+  --ah-navbar-bg: rgba(27, 27, 31, 0.82);
+  --ah-navbar-border: rgba(255, 255, 255, 0.08);
+  --ah-card-bg: #232328;
+  --ah-card-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  --ah-card-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.5);
+  --ah-hero-bg: linear-gradient(180deg, #201914 0%, #1b1b1f 100%);
+  --ah-hero-title-from: #fb923c;
+  --ah-hero-title-to: #f87171;
+  --ah-faq-hover-bg: #2a2a2e;
+  --ah-badge-border: rgba(249, 115, 22, 0.4);
+  --ah-bundle-bg: linear-gradient(135deg, #332218 0%, #2a211c 100%);
+  --ah-img-border: rgba(255, 255, 255, 0.12);
+  --ah-img-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+}
+
+/* ─── Default VitePress hero (guide pages) ───────────────────── */
+.VPHero {
+  position: relative;
+  overflow: hidden;
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: -160px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 700px;
+  background: radial-gradient(
+    ellipse at center,
+    color-mix(in srgb, var(--vp-c-brand-1) 14%, transparent) 0%,
+    transparent 65%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.VPHero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Default hero actions are replaced by the App Store / Product Hunt badges. */
+.VPHero .actions {
+  display: none;
+}
+
+.VPHero .tagline {
+  font-size: 17px;
+  line-height: 1.65;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ─── Store badges ───────────────────────────────────────────── */
+.home-badge-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.VPHero.has-image .home-badge-row {
+  justify-content: flex-start;
+}
+
+.store-badge-link {
+  display: inline-flex;
+  border-radius: 10px;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  outline-offset: 3px;
+}
+
+.store-badge-link:hover {
+  opacity: 0.82;
+  transform: translateY(-1px);
+}
+
+.store-badge-link:active {
+  opacity: 0.65;
+  transform: translateY(0);
+}
+
+.store-badge {
+  display: block;
+  height: 46px;
+  width: auto;
+}
+
+/* Only the black App Store badge is inverted; the Product Hunt badge
+   already ships as its own white card. */
+.dark .store-badge:not(.ph-badge) {
+  filter: invert(1) brightness(0.92);
+}
+
+/* ─── Sidebar ────────────────────────────────────────────────── */
+.VPSidebar {
+  background: var(--vp-sidebar-bg-color);
+  background-image: var(--vp-sidebar-bg-image);
+  position: relative;
+}
+
+.VPSidebar .curtain {
+  background-color: transparent;
+}
+
+/* ─── Default theme feature cards (guide pages) ──────────────── */
+.VPFeatures .VPFeature {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 28px 24px;
+  transition: border-color 0.2s ease;
+}
+
+.VPFeatures .VPFeature:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+.VPFeature .icon {
+  background-color: var(--vp-c-brand-soft);
+  border-radius: 10px;
+}
+
+.VPFeature .icon img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .home-badge-row { gap: 10px; }
+  .store-badge { height: 40px; }
+}

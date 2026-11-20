@@ -1,0 +1,30 @@
+{
+  "name": "pet-reminder-docs",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Official website for Reminder 2.0.0 — a calm, local-first macOS reminder app with a desktop pet companion. 7 languages, light/dark themes.",
+  "main": "index.js",
+  "packageManager": "pnpm@10.26.0",
+  "homepage": "https://reminder.w3cub.com",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "docs:deploy": "./deploy.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reminder",
+    "desktop-pet",
+    "macos",
+    "gpui",
+    "local-first",
+    "vitepress",
+    "i18n"
+  ],
+  "author": "Terry",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
