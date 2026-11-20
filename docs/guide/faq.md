@@ -1,41 +1,31 @@
 # FAQ
 
-**Q: What is Reminder?**
+Quick answers about Persim.
 
-A: A calm, local-first reminder app for macOS with a desktop pet that grows as you complete reminders and keep a streak going. Version 2.0.0 is a native Rust + GPUI rebuild.
+### Is Persim free?
 
-**Q: Is Reminder free?**
+You can download and use the core browsing features for free. Some advanced capabilities are unlocked with an in-app purchase, and the free version shows a small badge in the tab bar.
 
-A: Yes. The app and the British Shorthair companion are free. Extra pets are optional in-app purchases: $3.99 each, or $19.99 for the All Pets Pack. No reminder feature requires a purchase.
+### Which operating systems are supported?
 
-**Q: Do I need an account?**
+Persim is built for macOS 12 or later and runs on Apple Silicon and Intel Macs.
 
-A: No. There is no sign-in, no account and no cloud sync. Your data stays on your Mac.
+### Will my data be uploaded?
 
-**Q: Does it work offline?**
+No account is required, and history, bookmarks, sessions and downloads stay on your Mac. Features that need the network — such as updating an ad-blocking subscription — fetch only what they need. You can remove site data from the cookie manager.
 
-A: Yes. Reminders, notes, statistics and pet animations all work offline. Only downloading a newly purchased pet pack needs the internet.
+### How do I import bookmarks from another browser?
 
-**Q: Which macOS versions are supported?**
+Export your bookmarks to an HTML file from Chrome or Edge, then use **Import HTML** in Persim's bookmark manager. Folders and duplicate links are handled for you.
 
-A: macOS 12 Monterey or later, on Apple Silicon (M-series) and Intel Macs.
+### How do I save a video I found online?
 
-**Q: Which languages does the app support?**
+Open the media panel, choose one of the detected videos and download it. Videos served in several pieces are joined into one MP4, and finished files can be opened with your usual apps.
 
-A: 25 interface languages, including English, Simplified and Traditional Chinese, Japanese, German, Spanish and French. Light and dark themes follow your system.
+### How do I change the interface language?
 
-**Q: Which pets are available?**
+Open `persim://settings` → **General** → **Language**. The app offers 25 languages; reopen the window to see the change.
 
-A: British Shorthair (free), Corgi, Husky, Ragdoll Cat and Shiba Inu ($3.99 each), plus the $19.99 All Pets Pack. See [Pets & IAP](./pets.md).
+### Still have a question?
 
-**Q: How do I restore a purchase?**
-
-A: Open the pet store and tap **Restore Purchases** while signed in with the same Apple ID.
-
-**Q: Where is my data stored?**
-
-A: Locally inside the app's container. See [Privacy Choices](./privacy-choices.md).
-
-**Q: How do I report a bug or request a feature?**
-
-A: Open an issue in the [project repository](https://github.com/petreminder/reminder) or email [reminder@w3cub.com](mailto:reminder@w3cub.com).
+Write to **persim@w3cub.com** and tell us what you were trying to do.

@@ -1,48 +1,30 @@
 # Troubleshooting
 
-## Reminders never arrive
+Fixes for the problems you might run into.
 
-1. Open **System Settings → Notifications → Reminder** and confirm alerts are allowed
-2. Check that reminders are not paused in the tray menu
-3. Make sure your Mac is awake at the scheduled time
-4. Quit and reopen Reminder
+## A page won't load
 
-If the first-launch prompt was dismissed, notifications may be disabled permanently until you re-enable them in System Settings.
+- Check that other sites open, then try reloading with ⌘R.
+- If you enabled an ad-blocking rule list, pause it for a moment to see whether it is blocking this site.
+- Try a private window (⌘⇧N). If the page works there, clear the site's cookies from the cookie manager.
 
-## The pet does not appear
+## A download is stuck or incomplete
 
-- Confirm the pet is visible in the tray menu (show/hide pet)
-- Check that a companion is selected in **Settings → Pet**
-- Verify the pet pack finished downloading; reopen the pet store and try **Restore Purchases**
-- On an external display or full-screen app, move the pet back to the main screen from the tray menu
+- Open the download panel and pause, then resume the item.
+- For videos saved from a page, delete the partial file and try again. Split videos are joined into one MP4; a failed join leaves the original pieces in the download folder.
 
-## A purchase does not unlock
+## Bookmarks did not import
 
-1. Open the pet store and tap **Restore Purchases**
-2. Confirm you are signed in to the Mac App Store with the same Apple ID
-3. Check your network connection, then retry
-4. If it still fails, contact [reminder@w3cub.com](mailto:reminder@w3cub.com) with the product name
+Export bookmarks to an HTML file from your old browser first, then in Persim open the bookmark manager and choose **Import HTML**. Folders and duplicate links are handled for you.
 
-## A pet pack fails to download
+## Videos are not detected
 
-The app verifies each pack with a SHA-256 checksum and retries a failed download once. A persistent failure usually means a flaky network — try again on a stable connection.
+Not every site exposes a video file. Open the media panel on the page you want; if nothing appears, the site may be streaming in a way that can't be saved directly.
 
-## The app does not open
+## The app feels slow
 
-1. Restart your Mac
-2. Reinstall from the Mac App Store (local data is kept outside the app bundle)
-3. If Gatekeeper blocks a GitHub build, use **System Settings → Privacy & Security → Open Anyway**
-
-## Where are my logs and data?
-
-Sandboxed builds store data in:
-
-```
-~/Library/Containers/com.w3cub.reminder/Data/Library/Application Support/com.w3cub.reminder/
-```
-
-Use **Settings → General → Log folder** to open it directly.
+Close tabs you are not using, or disable an ad-blocking subscription you no longer need. You can review site permissions in Settings.
 
 ## Still stuck?
 
-Open an issue in the [project repository](https://github.com/petreminder/reminder) with your macOS version, Reminder version, steps to reproduce and logs, or email [reminder@w3cub.com](mailto:reminder@w3cub.com).
+Write to **persim@w3cub.com** with what you were doing and, if you can, a screenshot.

@@ -1,32 +1,24 @@
-# Introducción
+# Qué es Persim
 
-## Acerca de Reminder
+Un navegador para Mac listo desde el primer momento: pestañas, búsqueda, marcadores y descargas.
 
-**Reminder** es una aplicación de recordatorios serena y local-first para macOS, con un pequeño compañero de escritorio que se da cuenta cuando usted cumple lo que se propone. Cree un recordatorio, complételo y vea crecer a su mascota con su racha.
+## Desde el primer clic
 
-La versión **2.0.0** es una reconstrucción completa: una aplicación nativa en Rust + [GPUI](https://gpui.rs), sin WebView y sin entorno de ejecución de JavaScript. Arranca en aproximadamente un segundo y el paquete completo ocupa unos 24 MB.
+- **Navegar y buscar.** Escribe una dirección o una pregunta en la barra. Los sitios que más visitas aparecen primero.
+- **Pestañas y ventanas.** Abre, arrastra, agrupa, silencia y previsualiza. Pulsa ⌘⇧A para encontrar una pestaña.
+- **Volver a encontrar.** Marcadores, barra de marcadores, historial, descargas y «Restaurar la última sesión».
 
-## Novedades de 2.0.0
+## Un poco más tranquilo
 
-- **Una ventana de tareas rediseñada** — escriba, programe y marque como completada una tarea en un solo lugar, sin volver a la lista
-- **Espacio de trabajo de tres columnas** — listas inteligentes a la izquierda, tareas en el centro y detalles a la derecha; puede arrastrar la columna central hasta el ancho que prefiera
-- **Notas en Markdown** — edición por bloques para descripciones de tareas y notas independientes: encabezados, listas, tareas pendientes, citas, código y separadores, todo guardado como Markdown
-- **Recordatorios nativos** — reglas puntuales y recurrentes, posposición, notificaciones del sistema, sonidos, atajos globales y un icono persistente en la barra de menús
-- **Una mascota de escritorio** — una ventana flotante transparente con animaciones de sprites; sale a escena cuando salta un recordatorio, sigue el cursor y responde a los clics
-- **Tienda de mascotas** — previsualice, compre y restaure compañeros ilustrados mediante StoreKit 2
-- **Estadísticas y logros** — tendencias de finalización, días de racha y 11 logros integrados
-- **25 idiomas de interfaz**, temas claro y oscuro, colores de acento e inicio automático al iniciar sesión
+- Bloqueo de anuncios con suscripciones, reglas propias y lista de permitidos.
+- Fuerza el modo oscuro en páginas, silencia pestañas y bloquea ventanas emergentes desde Ajustes.
+- Una ventana privada (⌘⇧N) no guarda el historial.
 
-## Diseñada para no estorbar
+## Vídeos y textos largos
 
-Sin fuentes de contenido, sin anuncios, sin notificaciones que usted no haya solicitado. No hay cuenta ni inicio de sesión: sus recordatorios, notas y datos de la mascota permanecen en su Mac. App Sandbox está activado y la aplicación solo accede a los archivos que usted elige.
+- El panel multimedia muestra los vídeos de la página; al guardarlos obtienes un MP4 que puedes abrir con la app que quieras.
+- El modo lectura (⌘⇧R) conserva el artículo y quita el ruido. Puedes capturar lo que ves o la página completa en PDF.
 
-## Requisitos del sistema
+## A tu manera
 
-- **macOS**: 12 Monterey o posterior
-- **CPU**: Apple Silicon (serie M) o Intel (64 bits)
-- **Almacenamiento**: unos 30 MB para la aplicación, más los paquetes de mascotas opcionales
-
-## Primeros pasos
-
-Continúe con la [Guía de instalación](./installation.md) o consulte [Uso](./usage.md) y [Mascotas y compras integradas](./pets.md).
+Claro, oscuro o según el sistema; seis colores de acento; tres modos de barra de marcadores; 25 idiomas. El aspecto cambia al instante; el idioma se aplica al volver a abrir la ventana.

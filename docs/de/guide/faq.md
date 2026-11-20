@@ -1,41 +1,31 @@
-# FAQ
+# Häufige Fragen
 
-**F: Was ist Reminder?**
+Kurze Antworten zu Persim.
 
-A: Eine ruhige, Local-First-App für Erinnerungen unter macOS mit einem Desktop-Haustier, das wächst, wenn Sie Erinnerungen abhaken und eine Serie aufrechterhalten. Version 2.0.0 ist eine native Neuentwicklung in Rust + GPUI.
+### Ist Persim kostenlos?
 
-**F: Ist Reminder kostenlos?**
+Die grundlegenden Browserfunktionen sind kostenlos nutzbar. Einige erweiterte Funktionen gibt es per In-App-Kauf; die kostenlose Version zeigt ein kleines Abzeichen in der Tab-Leiste.
 
-A: Ja. Die App und der Begleiter British Shorthair sind kostenlos. Weitere Haustiere sind optionale In-App-Käufe: $3.99 pro Stück oder $19.99 für das All Pets Pack. Keine Erinnerungsfunktion erfordert einen Kauf.
+### Welche Betriebssysteme werden unterstützt?
 
-**F: Benötige ich ein Konto?**
+Persim ist für macOS 12 oder neuer entwickelt und läuft auf Apple Silicon und Intel.
 
-A: Nein. Es gibt keine Anmeldung, kein Konto und keine Cloud-Synchronisierung. Ihre Daten bleiben auf Ihrem Mac.
+### Werden meine Daten hochgeladen?
 
-**F: Funktioniert die App offline?**
+Nein. Verlauf, Lesezeichen, Sitzungen und Downloads bleiben lokal, ein Konto ist nicht nötig. Nur Funktionen wie die Aktualisierung eines Werbeblocker-Abonnements nutzen das Netz.
 
-A: Ja. Erinnerungen, Notizen, Statistiken und Haustier-Animationen funktionieren alle offline. Nur das Herunterladen eines neu gekauften Haustier-Pakets erfordert eine Internetverbindung.
+### Wie übernehme ich Lesezeichen aus einem anderen Browser?
 
-**F: Welche macOS-Versionen werden unterstützt?**
+In Chrome oder Edge als HTML exportieren, dann im Persim-Lesezeichenmanager „HTML importieren“ wählen. Ordner und doppelte Links werden automatisch behandelt.
 
-A: macOS 12 Monterey oder neuer, auf Apple Silicon (M-Serie) und Intel-Macs.
+### Wie speichere ich ein Video?
 
-**F: Welche Sprachen unterstützt die App?**
+Medienfenster öffnen, erkanntes Video auswählen und herunterladen. Aufgeteilte Videos werden zu einer MP4 zusammengefügt.
 
-A: 25 Oberflächensprachen, darunter Englisch, vereinfachtes und traditionelles Chinesisch, Japanisch, Deutsch, Spanisch und Französisch. Helle und dunkle Designs folgen Ihrem System.
+### Wie ändere ich die Sprache?
 
-**F: Welche Haustiere gibt es?**
+`persim://settings` → **Allgemein** → **Sprache**. 25 Sprachen stehen bereit; nach dem erneuten Öffnen des Fensters ist die Änderung sichtbar.
 
-A: British Shorthair (kostenlos), Corgi, Husky, Ragdoll Cat und Shiba Inu (je $3.99) sowie das All Pets Pack für $19.99. Siehe [Haustiere & In-App-Käufe](./pets.md).
+### Noch eine Frage?
 
-**F: Wie stelle ich einen Kauf wieder her?**
-
-A: Öffnen Sie den Haustier-Shop und tippen Sie auf **Käufe wiederherstellen**, während Sie mit derselben Apple ID angemeldet sind.
-
-**F: Wo werden meine Daten gespeichert?**
-
-A: Lokal im Container der App. Siehe [Datenschutzoptionen](./privacy-choices.md).
-
-**F: Wie melde ich einen Fehler oder schlage eine Funktion vor?**
-
-A: Eröffnen Sie ein Issue im [Projekt-Repository](https://github.com/petreminder/reminder) oder schreiben Sie an [reminder@w3cub.com](mailto:reminder@w3cub.com).
+Schreibe an **persim@w3cub.com** und beschreibe, was du tun möchtest.

@@ -1,47 +1,25 @@
-# Datenschutzerklärung
+# Datenschutz und deine Daten
 
-_Zuletzt aktualisiert: 2026-11-16_
+Was auf deinem Mac bleibt und wann das Netz nötig ist.
 
-Reminder ist eine Local-First-Anwendung für macOS. Ihre Erinnerungen, Notizen, Einstellungen und Haustier-Pakete werden auf Ihrem Mac gespeichert. Wir betreiben kein Kontosystem und erheben keine Daten zu Ihren Aufgaben.
+## Lokal gespeichert
 
-## Was wir nicht erheben
+Verlauf, Lesezeichen, offene Tabs, Downloads und Cookies liegen auf deinem Mac. Es gibt kein Konto und keine Cloud-Synchronisierung. Ein privates Fenster (⌘⇧N) hinterlässt keine Spuren in Verlauf und Sitzung.
 
-- Kein Konto, keine Anmeldung, kein Profil
-- Keine Analyse-, Werbe- oder Tracking-SDKs
-- Keine Cloud-Synchronisierung von Erinnerungen oder Notizen
-- Kein Verkauf und keine Weitergabe personenbezogener Informationen
+## Wann das Netz genutzt wird
 
-## Auf Ihrem Gerät gespeicherte Daten
+- Natürlich beim Laden der Seiten, die du aufrufst.
+- Beim Aktualisieren eines aktiven Werbeblocker-Abonnements. Schlägt das fehl, gelten die gespeicherten Regeln weiter.
+- Beim Herunterladen eines Skripts oder einer Datei, die du angefordert hast.
 
-- Erinnerungen, Listen, Tags, Teilaufgaben, Notizen und Markdown-Inhalte
-- Statistiken, Serien und Fortschritt bei Erfolgen
-- Einstellungen: Sprache, Design, Akzentfarbe, Tastenkürzel, Töne
-- Heruntergeladene Haustier-Pakete und Kaufbelege zur Prüfung der Berechtigung
+## Deine Berechtigungen
 
-Diese Daten liegen im lokalen Container der App. Wird der App-Container gelöscht, werden sie entfernt.
+Kamera und Mikrofon werden pro Seite gemerkt. Standort und Benachrichtigungen verwaltet macOS selbst. Pop-ups sind auf erlaubte Seiten beschränkt.
 
-## Netzwerkanfragen
+## Dateien auf der Platte
 
-Reminder richtet Anfragen ausschließlich an:
-
-- `app-sources.w3cub.com` für den Katalog des Haustier-Shops und den Download von Haustier-Paketen
-- die StoreKit-Dienste von Apple für In-App-Käufe und Wiederherstellung
-- ein optionales Feedback-Formular, nur wenn Sie sich für das Senden von Feedback entscheiden
-
-Von Ihnen eingetipptes Feedback ist der einzige Inhalt, der Ihren Mac verlassen kann; es ist mit keinem Konto verknüpft und wird nicht für Tracking verwendet.
-
-## In-App-Käufe
-
-Käufe werden vollständig von Apple über den Mac App Store abgewickelt. Wir erhalten und speichern keine Zahlungsinformationen. Lokale Belege dienen ausschließlich dazu zu prüfen, ob ein Haustier freigeschaltet ist.
-
-## Datenschutz von Kindern
-
-Reminder ist mit 4+ eingestuft und erhebt wissentlich keine personenbezogenen Daten von Kindern.
-
-## Änderungen
-
-Aktualisierungen dieser Erklärung werden auf dieser Seite mit einem neuen Datum veröffentlicht.
+Persim liest nur Dateien, die du im Systemdialog auswählst oder ausdrücklich freigibst. Freigaben kannst du in den Einstellungen prüfen und widerrufen.
 
 ## Kontakt
 
-Fragen zum Datenschutz: [reminder@w3cub.com](mailto:reminder@w3cub.com). Siehe auch [Datenschutzoptionen](./privacy-choices.md).
+Fragen zum Datenschutz: **persim@w3cub.com**.

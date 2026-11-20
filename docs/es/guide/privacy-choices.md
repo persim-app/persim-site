@@ -1,35 +1,27 @@
 # Opciones de privacidad
 
-Reminder lo almacena todo localmente, por lo que no existe ningún perfil en el servidor al que acceder, descargar o eliminar. Usted mantiene el control directamente en su Mac.
+Formas sencillas de mantener el control.
 
-## Sus datos permanecen locales
+## Navegar sin dejar rastro
 
-- Recordatorios, listas, notas, etiquetas y subtareas
-- Estadísticas, rachas y logros
-- Ajustes, atajos y paquetes de mascotas descargados
+Usa una ventana privada (⌘⇧N). No escribe en el historial ni recuerda la sesión, y sus pestañas desaparecen al cerrarla.
 
-No recopilamos, vendemos ni cedemos información personal, y no utilizamos servicios de análisis ni de publicidad de terceros.
+## Borrar lo guardado
 
-## Gestionar o eliminar datos
+Elimina las cookies y los datos de sitios desde el gestor de cookies de los ajustes. El historial y las descargas también se pueden borrar allí.
 
-- Elimine recordatorios, listas o notas concretos desde la aplicación
-- Exporte sus datos desde la aplicación antes de eliminarlos si desea conservar una copia
-- Elimine todo saliendo de Reminder y borrando su contenedor:
+## Decide qué puede hacer cada sitio
 
-```bash
-rm -rf ~/Library/Containers/com.w3cub.reminder
-```
+La cámara, el micrófono y el acceso a archivos se recuerdan por sitio. Permite los que confías y rechaza los demás en los ajustes. Las ventanas emergentes solo se abren en los sitios que autorices.
 
-Las compilaciones de desarrollo pueden almacenar datos fuera del contenedor; consulte **Ajustes → General → Carpeta de datos** para ver la ruta exacta.
+## Controla las funciones en segundo plano
 
-## Funciones de red opcionales
+Activa o desactiva las suscripciones de bloqueo cuando quieras desde los ajustes. Si una está desactivada, no se descarga ninguna lista.
 
-- El catálogo de la tienda y las descargas de mascotas solo se usan cuando abre la tienda o compra una mascota
-- Los comentarios solo se envían cuando usted envía explícitamente el formulario integrado
-- La sincronización en la nube y las cuentas no existen en Reminder, por lo que no hay nada que desactivar
+## Elige tu motor de búsqueda
 
-## Compras integradas
+Establece tu motor predeterminado en los ajustes. Las sugerencias provienen del motor que elijas.
 
-La compra y la restauración las gestiona Apple. Para revisar o gestionar el historial de compras, use la Mac App Store con su Apple ID. Para desbloquear mascotas en un Mac nuevo, use **Restaurar compras** en la tienda de mascotas.
+## ¿Dudas?
 
-¿Alguna pregunta? Escriba a [reminder@w3cub.com](mailto:reminder@w3cub.com) o lea la [Política de privacidad](./privacy.md).
+Escribe a **persim@w3cub.com** si quieres saber más sobre cómo se tratan tus datos.

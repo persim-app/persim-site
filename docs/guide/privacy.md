@@ -1,47 +1,25 @@
-# Privacy Policy
+# Privacy and your data
 
-_Last updated: 2026-11-16_
+What stays on your Mac, and what needs the network.
 
-Reminder is a local-first macOS application. Your reminders, notes, settings and pet packs are stored on your Mac. We do not operate an account system and we do not collect your task data.
+## Stored on your Mac
 
-## What We Do Not Collect
+Your history, bookmarks, open tabs, downloads and cookies are saved locally. There is no account and no cloud sync. A private window (⌘⇧N) doesn't add to your history or session.
 
-- No account, sign-in or profile
-- No analytics, advertising or tracking SDKs
-- No cloud sync of reminders or notes
-- No sale or sharing of personal information
+## When the network is used
 
-## Data Stored on Your Device
+- Loading the websites you visit, of course.
+- Refreshing an ad-blocking subscription, when one is enabled. If the update fails, the saved rules keep working.
+- Downloading a user script or a file you asked for.
 
-- Reminders, lists, tags, subtasks, notes and Markdown content
-- Statistics, streaks and achievement progress
-- Preferences: language, theme, accent colour, shortcuts, sounds
-- Downloaded pet packs and purchase receipts used to verify ownership
+## Your permissions
 
-This data lives in the app's local container. Deleting the app container removes it.
+Camera and microphone access is remembered per site, so you can allow one site and refuse another. Location and notifications are controlled by macOS itself. Pop-ups are limited to sites you allow.
 
-## Network Requests
+## Files on disk
 
-Reminder only makes requests to:
-
-- `app-sources.w3cub.com` for the pet store catalog and pet pack downloads
-- Apple's StoreKit services for in-app purchases and restoration
-- an optional feedback form, only when you choose to send feedback
-
-Feedback you type is the only content that can leave your Mac; it is not linked to an account and is not used for tracking.
-
-## In-App Purchases
-
-Purchases are processed entirely by Apple through the Mac App Store. We never receive or store payment information. Local receipts are used only to verify that a pet is unlocked.
-
-## Children's Privacy
-
-Reminder is rated 4+ and does not knowingly collect personal information from children.
-
-## Changes
-
-Updates to this policy will be posted on this page with a new date.
+Persim only reads files you choose in the system file dialog or explicitly grant access to. You can review and revoke those grants in Settings.
 
 ## Contact
 
-Questions about privacy: [reminder@w3cub.com](mailto:reminder@w3cub.com). See also [Privacy Choices](./privacy-choices.md).
+Questions about privacy: **persim@w3cub.com**.

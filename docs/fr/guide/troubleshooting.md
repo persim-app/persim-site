@@ -1,48 +1,30 @@
 # Dépannage
 
-## Les rappels n'arrivent jamais
+Des solutions aux problèmes les plus courants.
 
-1. Ouvrez **Réglages Système → Notifications → Reminder** et vérifiez que les alertes sont autorisées
-2. Vérifiez que les rappels ne sont pas suspendus dans le menu de la barre de menus
-3. Assurez-vous que votre Mac est éveillé à l'heure prévue
-4. Quittez puis rouvrez Reminder
+## Une page ne s'ouvre pas
 
-Si l'invite du premier lancement a été ignorée, les notifications peuvent rester désactivées jusqu'à ce que vous les réactiviez dans les Réglages Système.
+- Vérifiez que d'autres sites s'ouvrent, puis rechargez avec ⌘R.
+- Si un filtre de publicités est actif, mettez-le en pause un instant pour voir s'il bloque le site.
+- Essayez une fenêtre privée (⌘⇧N). Si la page s'ouvre là, supprimez les cookies du site depuis les réglages.
 
-## Le compagnon n'apparaît pas
+## Un téléchargement bloque ou reste incomplet
 
-- Vérifiez que le compagnon est visible dans le menu de la barre de menus (afficher/masquer le compagnon)
-- Vérifiez qu'un compagnon est sélectionné dans **Réglages → Compagnon**
-- Vérifiez que le téléchargement du pack est terminé ; rouvrez la boutique et essayez **Restaurer les achats**
-- Sur un écran externe ou une application en plein écran, ramenez le compagnon sur l'écran principal depuis le menu de la barre de menus
+- Ouvrez le panneau de téléchargement, mettez l'élément en pause, puis reprenez.
+- Si une vidéo enregistrée depuis une page a échoué, supprimez le fichier incomplet et réessayez. Les vidéos fractionnées sont assemblées en un seul MP4 ; en cas d'échec, les morceaux restent dans le dossier de téléchargements.
 
-## Un achat ne se débloque pas
+## Les favoris ne se sont pas importés
 
-1. Ouvrez la boutique de compagnons et cliquez sur **Restaurer les achats**
-2. Vérifiez que vous êtes connecté au Mac App Store avec le même identifiant Apple
-3. Vérifiez votre connexion réseau, puis réessayez
-4. Si l'échec persiste, contactez [reminder@w3cub.com](mailto:reminder@w3cub.com) en indiquant le nom du produit
+Exportez d'abord les favoris de votre ancien navigateur au format HTML. Dans Persim, ouvrez le gestionnaire de favoris et choisissez **Importer HTML**. Dossiers et liens en double sont triés automatiquement.
 
-## Le téléchargement d'un pack échoue
+## Aucune vidéo détectée
 
-L'application vérifie chaque pack avec une somme de contrôle SHA-256 et relance une fois un téléchargement ayant échoué. Un échec persistant indique généralement un réseau instable — réessayez avec une connexion stable.
+Tous les sites ne proposent pas une vidéo enregistrable. Ouvrez le panneau multimédia sur la page concernée. Si rien n'apparaît, le mode de lecture du site ne permet pas un enregistrement direct.
 
-## L'application ne s'ouvre pas
+## L'application ralentit
 
-1. Redémarrez votre Mac
-2. Réinstallez depuis le Mac App Store (les données locales sont conservées en dehors du bundle de l'application)
-3. Si Gatekeeper bloque une version GitHub, utilisez **Réglages Système → Confidentialité et sécurité → Ouvrir quand même**
+Fermez les onglets inutilisés ou désactivez un abonnement de filtrage dont vous n'avez plus besoin. Les autorisations des sites se vérifient dans les réglages.
 
-## Où sont mes journaux et mes données ?
+## Toujours aucun résultat
 
-Les versions bac à sable stockent les données dans :
-
-```
-~/Library/Containers/com.w3cub.reminder/Data/Library/Application Support/com.w3cub.reminder/
-```
-
-Utilisez **Réglages → Général → Dossier des journaux** pour l'ouvrir directement.
-
-## Toujours bloqué ?
-
-Ouvrez un ticket dans le [dépôt du projet](https://github.com/petreminder/reminder) en indiquant votre version de macOS, votre version de Reminder, les étapes de reproduction et les journaux, ou écrivez à [reminder@w3cub.com](mailto:reminder@w3cub.com).
+Écrivez à **persim@w3cub.com** en décrivant ce que vous faisiez ; si possible, joignez une capture d'écran.

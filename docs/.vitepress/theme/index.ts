@@ -2,17 +2,22 @@ import DefaultTheme from 'vitepress/theme'
 import { h, defineComponent } from 'vue'
 import { useRoute, useData } from 'vitepress'
 import AdvancedHome from './AdvancedHome.vue'
-import HomeActions from './HomeActions.vue'
+import AccentPicker from './AccentPicker.vue'
+import { initAccent } from './accent'
 import './custom.css'
 
 export default {
   extends: DefaultTheme,
-  // Layout MUST be a stateful component (defineComponent), not a bare function.
-  // VitePressApp renders `() => h(Theme.Layout)` once with no reactive deps of
-  // its own, so a functional Layout would never re-run on client-side
-  // navigation — the URL would change but the localized frontmatter never would.
+  enhanceApp() {
+    // Apply the saved (or default logo) accent before the first paint so every
+    // page — custom home and default-theme guides alike — starts in sync.
+    initAccent()
+  },
+  // A stateful Layout: VitePress renders `() => h(Theme.Layout)` once, so a
+  // functional component would never re-run on client-side navigation and the
+  // localized frontmatter would go stale after a language switch.
   Layout: defineComponent({
-    name: 'ReminderLayout',
+    name: 'PersimLayout',
     setup() {
       const route = useRoute()
       const { frontmatter } = useData()
@@ -23,15 +28,16 @@ export default {
 
       return () => {
         if (isHomePage()) {
-          // `:key` forces a clean remount per URL so no stale locale state leaks.
+          // :key forces a clean remount per URL so no locale state leaks.
           return h(AdvancedHome, { data: frontmatter.value, key: route.path })
         }
-
-        return h(
-          DefaultTheme.Layout,
-          { sidebar: false },
-          { 'home-hero-info-after': () => h(HomeActions) }
-        )
+        // Guide pages use the default theme; inject the same site-wide accent
+        // control into its desktop nav bar and mobile nav screen. Like the
+        // reminder site, guide pages have no site footer.
+        return h(DefaultTheme.Layout, null, {
+          'nav-bar-content-after': () => h(AccentPicker),
+          'nav-screen-content-after': () => h(AccentPicker),
+        })
       }
     },
   }),

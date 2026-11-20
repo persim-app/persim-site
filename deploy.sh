@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Deploy script for Reminder documentation
+# Deploy script for Persim documentation
 
 set -e
 
@@ -48,16 +48,9 @@ rm -rf `find . -maxdepth 1 ! -name .git ! -name .`
 echo "📋 Copying built files..."
 cp -rf ../../docs/.vitepress/dist/* .
 
-# Copy IAP download files if they exist
-echo "📦 Copying IAP pet files..."
-if [ -d "../../pets" ]; then
-    cp -rf ../../pets ./
-    echo "✅ Pet files copied"
-fi
-
 # Add CNAME file for custom domain
 echo "🌐 Adding CNAME file..."
-echo "reminder.w3cub.com" > CNAME
+echo "persim.w3cub.com" > CNAME
 
 # Add and commit
 echo "📝 Committing changes..."
@@ -65,7 +58,7 @@ git add -A .
 if git diff --staged --quiet; then
         echo "ℹ️  No changes to commit"
 else
-        git commit -m "Deploy Reminder website
+        git commit -m "Deploy Persim website
 
 Built from $(git -C .. rev-parse --short HEAD)
 Deployed on $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
@@ -84,4 +77,4 @@ cd ../..
 rm -rf temp_deploy
 
 echo "🎉 Deployment completed successfully!"
-echo "📖 Documentation available at: https://reminder.w3cub.com/"
+echo "📖 Website available at: https://persim.w3cub.com/"

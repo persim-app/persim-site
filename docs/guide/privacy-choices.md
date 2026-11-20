@@ -1,35 +1,27 @@
 # Privacy Choices
 
-Reminder stores everything locally, so there is no server-side profile to access, download or delete. You stay in control directly on your Mac.
+Simple ways to stay in control.
 
-## Your Data Stays Local
+## Browse without a record
 
-- Reminders, lists, notes, tags and subtasks
-- Statistics, streaks and achievements
-- Settings, shortcuts and downloaded pet packs
+Use a private window (⌘⇧N). It does not add to your history or remember your session, and its tabs disappear when you close it.
 
-We do not collect, sell or share personal information, and we do not use third-party analytics or advertising services.
+## Clear what is stored
 
-## Managing or Removing Data
+Remove cookies and site data from the cookie manager in Settings. You can clear browsing history and downloads from the same area.
 
-- Delete individual reminders, lists or notes inside the app
-- Export your data from the app before removing it, if you want a copy
-- Remove everything by quitting Reminder and deleting its container:
+## Decide what each site can do
 
-```bash
-rm -rf ~/Library/Containers/com.w3cub.reminder
-```
+Camera, microphone and file access are remembered per site. Allow a site you trust and refuse others in Settings. Pop-ups are limited to sites you allow.
 
-Development builds may store data outside the container; check **Settings → General → Data folder** for the exact path.
+## Control background features
 
-## Optional Network Features
+Turn ad-blocking subscriptions on or off in Settings. When one is off, no rule list is fetched.
 
-- Pet store catalog and pet downloads are only used when you open the store or buy a pet
-- Feedback is only sent when you explicitly submit the in-app form
-- Cloud sync and accounts do not exist in Reminder, so there is nothing to opt out of
+## Choose your search engine
 
-## In-App Purchases
+Pick your default search engine in Settings. Search suggestions come from the engine you choose.
 
-Purchase and restoration are handled by Apple. To review or manage purchase history, use the Mac App Store with your Apple ID. To unlock pets on a new Mac, use **Restore Purchases** in the pet store.
+## Questions
 
-Questions? Email [reminder@w3cub.com](mailto:reminder@w3cub.com) or read the [Privacy Policy](./privacy.md).
+Write to **persim@w3cub.com** if you want to know more about how your data is handled.

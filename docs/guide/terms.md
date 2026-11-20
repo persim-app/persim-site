@@ -1,35 +1,23 @@
 # Terms of Service
 
-_Last updated: 2026-11-16_
+The terms for using Persim.
 
-These Terms govern your use of Reminder. By downloading, installing or using the app, you agree to them. If you do not agree, do not use the app.
+## Using the app
 
-## License
+Persim is provided for personal use. You may download and use it on Macs you own or are allowed to use.
 
-Reminder is provided under the license terms included with each release. You receive a limited, non-exclusive, non-transferable license to use the app on your Mac in accordance with those terms.
+## Free and paid features
 
-## Local-First Use
+Core browsing features are available for free. Some advanced capabilities are unlocked with an in-app purchase. The free version shows a small badge in the tab bar; removing it requires the in-app purchase.
 
-Reminder is an offline-first application. Reminders, notes, settings and purchased pet packs are stored locally on your device. There is no account and no cloud service provided by us.
+## Third-party content
 
-## In-App Purchases
-
-Optional cosmetic pet packs are sold through the Mac App Store. All payments are processed by Apple; we do not handle payment information. Purchases can be restored on another Mac with the same Apple ID. Refunds are handled by Apple under its own policies.
-
-## Your Responsibilities
-
-- Use Reminder lawfully and in compliance with applicable rules
-- Do not reverse engineer, redistribute or resell the app or pet packs except as permitted by the license
-- Keep your own backups of data you care about
-
-## Disclaimer
-
-Reminder is provided "as is" without warranties of any kind. To the fullest extent permitted by law, the maintainers disclaim all warranties, express or implied, including merchantability and fitness for a particular purpose. We are not liable for missed reminders or data loss resulting from device failure, OS changes or deletion of local data.
+Websites, subscriptions and user scripts you use through Persim are provided by their own authors. Persim is not responsible for their content or availability.
 
 ## Changes
 
-We may update these Terms as the app evolves. The current version is always available on this page.
+Features and these terms may change over time. The version published on this website is the current one.
 
 ## Contact
 
-[reminder@w3cub.com](mailto:reminder@w3cub.com)
+Questions about these terms: **persim@w3cub.com**.

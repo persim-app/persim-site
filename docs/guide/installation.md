@@ -1,48 +1,27 @@
-# Installation
+# Install Persim
 
-Reminder is available for macOS through the Mac App Store. Version 2.0.0 is the current release.
+Download, set as default and bring your bookmarks along.
 
-## Download
+## Download and install
 
-- **[Reminder on the Mac App Store](https://apps.apple.com/app/id6776577400)** (recommended — automatic updates, sandbox build)
-- **[GitHub Releases](https://github.com/petreminder/reminder/releases)** — a direct `.dmg` build without automatic updates
+1. Open the [Mac App Store](https://apps.apple.com/app/id6835099132) and find Persim.
+2. After downloading, drag the app into your Applications folder. If macOS asks for confirmation, approve it.
+3. To make it your default browser, open **System Settings → Default Web Browser** and choose Persim.
 
-## Install from the Mac App Store
+Requires macOS 12 or later, on Apple Silicon and Intel Macs.
 
-1. Open the App Store link above, or search for "Reminder"
-2. Click **Get**, then **Install**
-3. Launch Reminder from Applications or Launchpad
+## Your first minute
 
-## Install from GitHub Releases
+- In `persim://settings` → **General**, choose the appearance, accent colour and bookmark bar.
+- 25 interface languages are available; a language change takes effect after you reopen the window.
+- The new tab page already has popular sites and AI shortcuts — start using them right away.
 
-1. Download the latest `.dmg`
-2. Double-click to mount it
-3. Drag `Reminder.app` into `Applications`
-4. Eject the image and open Reminder
+## Bring your bookmarks
 
-If macOS blocks the app, open **System Settings → Privacy & Security** and click **Open Anyway**, or right-click the app and choose **Open**.
+1. Export bookmarks as an HTML file in Chrome or Edge.
+2. Open Persim's bookmark manager and choose **Import HTML**.
+3. Nested folders are restored and duplicate addresses are skipped. You can reorder the bookmark bar anytime.
 
-## First Launch
+## Updates
 
-Allow **Notifications** when macOS asks — that is how reminders are delivered. Nothing else is required: there is no account, no sign-in and no demo credentials. Your British Shorthair companion is installed and ready from the first launch.
-
-## Updating
-
-- **Mac App Store**: updates are installed automatically
-- **GitHub Releases**: download the new build and replace the app in `Applications`
-
-Your reminders and pets are stored outside the app bundle, so updating never removes them.
-
-## Uninstall
-
-1. Quit Reminder (from the tray menu or `Cmd+Q`)
-2. Move `Reminder.app` to the Trash
-3. Optionally remove local data:
-
-```bash
-rm -rf ~/Library/Containers/com.w3cub.reminder
-```
-
-## Troubleshooting
-
-If installation fails, see [Troubleshooting](./troubleshooting.md) or email [reminder@w3cub.com](mailto:reminder@w3cub.com).
+Get new versions from the **Updates** tab in the Mac App Store. Your data stays where it is.

@@ -2,7 +2,7 @@
  * Locale helpers for the custom theme.
  *
  * All *translatable content* lives in each page's markdown frontmatter
- * (see docs/<lang>/index.md and docs/<lang>/marketplace/index.md). This file
+ * (see docs/<lang>/index.md and docs/<lang>/guide/*.md). This file
  * only holds the small bits of logic that must stay in code: the list of
  * supported locales and the helpers that compute locale-prefixed links.
  */

@@ -1,63 +1,63 @@
 /* =============================================================
-  Reminder — Home Page Styles
-  Compatible with VitePress default theme (light + dark)
+  Persim — light, logo-coloured theme matching the browser chrome
+  VitePress default theme (light + dark)
+  The accent is set on <html> by theme/accent.ts, so these values are
+  the no-JS defaults and the source of the derived brand shades.
   ============================================================= */
 
-/* ─── Brand + AdvancedHome layout tokens — light ─────────────── */
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-nav-logo-height: 26px;
-  --vp-home-hero-name-background: linear-gradient(135deg, #fb923c 0%, #f97316 60%, #ea580c 100%);
-  --vp-c-brand-1: #f97316;
-  --vp-c-brand-2: #ea580c;
-  --vp-c-brand-3: #c2410c;
-  --vp-c-brand-soft: rgba(249, 115, 22, 0.16);
+  --vp-nav-logo-height: 24px;
+  --vp-home-hero-name-background: linear-gradient(135deg, #f04a00 0%, #b93600 100%);
+
+  /* The logo's persimmon orange-red is the default; the nav colour button
+     overrides --vp-c-brand-1 at runtime for the whole site. */
+  --vp-c-brand-1: #f04a00;
+  --vp-c-brand-2: color-mix(in srgb, var(--vp-c-brand-1) 84%, #000);
+  --vp-c-brand-3: color-mix(in srgb, var(--vp-c-brand-1) 70%, #000);
+  --vp-c-brand-soft: color-mix(in srgb, var(--vp-c-brand-1) 13%, transparent);
   --vp-sidebar-bg-color: #ffffff;
 
-  --ah-navbar-bg: rgba(255, 255, 255, 0.82);
-  --ah-navbar-border: rgba(0, 0, 0, 0.08);
+  --ah-navbar-bg: rgba(255, 255, 255, 0.86);
+  --ah-navbar-border: rgba(15, 23, 42, 0.07);
   --ah-card-bg: #ffffff;
-  --ah-card-shadow: 0 4px 25px rgba(0, 0, 0, 0.07);
-  --ah-card-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.13);
-  --ah-hero-bg: linear-gradient(180deg, #fffaf3 0%, #ffffff 100%);
-  --ah-hero-title-from: #f97316;
-  --ah-hero-title-to: #dc2626;
-  --ah-faq-hover-bg: #f6f6f7;
-  --ah-badge-border: rgba(249, 115, 22, 0.28);
-  --ah-bundle-bg: linear-gradient(135deg, #fff7ed 0%, #fff1e6 100%);
-  --ah-img-border: rgba(0, 0, 0, 0.07);
-  --ah-img-shadow: 0 20px 60px rgba(120, 60, 10, 0.16);
-
+  --ah-card-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+  --ah-hero-bg: linear-gradient(180deg, #f7faff 0%, #ffffff 100%);
+  --ah-faq-hover-bg: #f7f9fc;
+  --ah-badge-border: color-mix(in srgb, var(--vp-c-brand-1) 26%, transparent);
+  --ah-img-border: rgba(15, 23, 42, 0.08);
+  --ah-img-shadow: 0 20px 50px color-mix(in srgb, var(--vp-c-brand-1) 12%, transparent);
+  /* Two soft washes derived from the live accent (like the reminder site),
+     so the sidebar tint follows the accent button. */
   --vp-sidebar-bg-image:
-    radial-gradient(circle at 20% 80%, rgba(249, 115, 22, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(251, 191, 36, 0.10) 0%, transparent 50%);
+    radial-gradient(circle at 18% 82%, color-mix(in srgb, var(--vp-c-brand-1) 8%, transparent) 0%, transparent 52%),
+    radial-gradient(circle at 82% 18%, color-mix(in srgb, var(--vp-c-brand-1) 12%, #ffffff) 0%, transparent 48%);
 }
 
-/* ─── AdvancedHome layout tokens — dark ──────────────────────── */
 .dark {
-  --vp-sidebar-bg-color: #1b1b1f;
-
-  --ah-navbar-bg: rgba(27, 27, 31, 0.82);
+  --vp-sidebar-bg-color: #16181d;
+  --ah-navbar-bg: rgba(22, 24, 29, 0.86);
   --ah-navbar-border: rgba(255, 255, 255, 0.08);
-  --ah-card-bg: #232328;
-  --ah-card-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
-  --ah-card-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.5);
-  --ah-hero-bg: linear-gradient(180deg, #201914 0%, #1b1b1f 100%);
-  --ah-hero-title-from: #fb923c;
-  --ah-hero-title-to: #f87171;
-  --ah-faq-hover-bg: #2a2a2e;
-  --ah-badge-border: rgba(249, 115, 22, 0.4);
-  --ah-bundle-bg: linear-gradient(135deg, #332218 0%, #2a211c 100%);
-  --ah-img-border: rgba(255, 255, 255, 0.12);
-  --ah-img-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  --ah-card-bg: #1e2127;
+  --ah-card-shadow: 0 4px 20px rgba(0, 0, 0, 0.24);
+  --ah-hero-bg: linear-gradient(180deg, #171d2a 0%, #1b1b1f 100%);
+  --ah-faq-hover-bg: #23262c;
+  --ah-badge-border: color-mix(in srgb, var(--vp-c-brand-1) 42%, transparent);
+  --ah-img-border: rgba(255, 255, 255, 0.1);
+  --ah-img-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  --vp-sidebar-bg-image:
+    radial-gradient(circle at 18% 82%, color-mix(in srgb, var(--vp-c-brand-1) 10%, transparent) 0%, transparent 52%),
+    radial-gradient(circle at 82% 18%, color-mix(in srgb, var(--vp-c-brand-1) 6%, transparent) 0%, transparent 48%);
 }
 
-/* ─── Default VitePress hero (guide pages) ───────────────────── */
+/* Guide pages use our SiteFooter via the layout-bottom slot. */
+.VPFooter { display: none !important; }
+
+/* Guide pages: use the same soft cards as the homepage. */
 .VPHero {
   position: relative;
   overflow: hidden;
 }
-
 .VPHero::before {
   content: '';
   position: absolute;
@@ -66,112 +66,51 @@
   transform: translateX(-50%);
   width: 900px;
   height: 700px;
-  background: radial-gradient(
-    ellipse at center,
-    color-mix(in srgb, var(--vp-c-brand-1) 14%, transparent) 0%,
-    transparent 65%
-  );
+  background: radial-gradient(ellipse at center, var(--vp-c-brand-soft) 0%, transparent 65%);
   pointer-events: none;
   z-index: 0;
 }
+.VPHero .container { position: relative; z-index: 1; }
+.VPHero .tagline { font-size: 17px; line-height: 1.65; max-width: 460px; margin-left: auto; margin-right: auto; }
 
-.VPHero .container {
-  position: relative;
-  z-index: 1;
-}
-
-/* Default hero actions are replaced by the App Store / Product Hunt badges. */
-.VPHero .actions {
-  display: none;
-}
-
-.VPHero .tagline {
-  font-size: 17px;
-  line-height: 1.65;
-  max-width: 440px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ─── Store badges ───────────────────────────────────────────── */
-.home-badge-row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 32px;
-  justify-content: center;
-}
-
-.VPHero.has-image .home-badge-row {
-  justify-content: flex-start;
-}
-
-.store-badge-link {
-  display: inline-flex;
-  border-radius: 10px;
-  transition: opacity 0.18s ease, transform 0.18s ease;
-  outline-offset: 3px;
-}
-
-.store-badge-link:hover {
-  opacity: 0.82;
-  transform: translateY(-1px);
-}
-
-.store-badge-link:active {
-  opacity: 0.65;
-  transform: translateY(0);
-}
-
-.store-badge {
-  display: block;
-  height: 46px;
-  width: auto;
-}
-
-/* Only the black App Store badge is inverted; the Product Hunt badge
-   already ships as its own white card. */
-.dark .store-badge:not(.ph-badge) {
-  filter: invert(1) brightness(0.92);
-}
-
-/* ─── Sidebar ────────────────────────────────────────────────── */
 .VPSidebar {
   background: var(--vp-sidebar-bg-color);
   background-image: var(--vp-sidebar-bg-image);
   position: relative;
 }
+.VPSidebar .curtain { background-color: transparent; }
 
-.VPSidebar .curtain {
-  background-color: transparent;
-}
-
-/* ─── Default theme feature cards (guide pages) ──────────────── */
-.VPFeatures .VPFeature {
-  background: var(--vp-c-bg-soft);
+.vp-doc a { text-decoration-color: var(--vp-c-brand-soft); }
+.vp-doc h2, .vp-doc h3 { letter-spacing: -0.01em; }
+.vp-doc :not(pre) > code {
   border: 1px solid var(--vp-c-divider);
-  border-radius: 12px;
-  padding: 28px 24px;
-  transition: border-color 0.2s ease;
+  background: var(--vp-c-bg-soft);
+  border-radius: 5px;
+  padding: 1px 5px;
 }
+.vp-doc blockquote {
+  border-left: 3px solid var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
+  border-radius: 0 10px 10px 0;
+}
+.vp-doc table { display: table; width: 100%; }
 
-.VPFeatures .VPFeature:hover {
-  border-color: var(--vp-c-brand-1);
+/* VitePress renders the outline heading from the global themeConfig even on
+   localized pages, so replace the label with a lang-attribute driven one. */
+.VPDocAsideOutline .outline-title { font-size: 0; }
+.VPDocAsideOutline .outline-title::after {
+  content: 'On this page';
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
 }
-
-.VPFeature .icon {
-  background-color: var(--vp-c-brand-soft);
-  border-radius: 10px;
-}
-
-.VPFeature .icon img {
-  width: 24px;
-  height: 24px;
-  display: block;
-}
+html[lang='zh-CN'] .VPDocAsideOutline .outline-title::after { content: '本页目录'; }
+html[lang='zh-TW'] .VPDocAsideOutline .outline-title::after { content: '本頁目錄'; }
+html[lang='ja'] .VPDocAsideOutline .outline-title::after { content: 'このページの内容'; }
+html[lang='de'] .VPDocAsideOutline .outline-title::after { content: 'Auf dieser Seite'; }
+html[lang='es'] .VPDocAsideOutline .outline-title::after { content: 'En esta página'; }
+html[lang='fr'] .VPDocAsideOutline .outline-title::after { content: 'Sur cette page'; }
 
 @media (max-width: 768px) {
-  .home-badge-row { gap: 10px; }
-  .store-badge { height: 40px; }
+  .VPHero .tagline { max-width: 360px; }
 }

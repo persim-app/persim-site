@@ -1,64 +1,19 @@
-# Contributing to Reminder Documentation
+# Contributing to Persim Documentation
 
-Thank you for your interest in contributing to the Reminder documentation! This repository contains the official website for the Reminder macOS app.
+欢迎改进 Persim 官网内容。
 
-## Ways to Contribute
+## 可以做什么
 
-- **Report Issues**: Found a bug in the documentation or have a suggestion? [Open an issue](https://github.com/petreminder/reminder/issues)
-- **Improve Documentation**: Fix typos, clarify instructions, or add missing information
-- **Add Guides**: Create new guides for common issues or features
-- **Translate**: Help translate the documentation to other languages
+- 报告文案错误、失效链接或描述与实际功能不符的地方
+- 改进指南的可读性，补充面向普通用户的操作步骤
+- 帮忙校对某一种语言的译文
 
-## Getting Started
+联系方式：`persim@w3cub.com`
 
-1. Fork this repository
-2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/pet-reminder-site.git`
-3. Install dependencies: `pnpm install`
-4. Start development server: `pnpm docs:dev`
-5. Make your changes
-6. Test your changes by building: `pnpm docs:build`
-7. Commit and push your changes
-8. Create a pull request
+## 写作约定
 
-## Documentation Guidelines
-
-### Writing Style
-
-- Use clear, concise language
-- Write in active voice when possible
-- Use headings and subheadings to organize content
-- Use screenshots where helpful for user guidance
-- Keep content consumer-friendly (no technical jargon)
-
-### File Structure
-
-- Main pages go in `docs/`
-- Guides go in `docs/guide/`
-- Use lowercase filenames with hyphens: `my-guide.md`
-
-### Links
-
-- Use relative links for internal documentation
-- Link to external resources when helpful
-- Ensure all links are working
-
-## Pull Request Process
-
-1. Ensure your changes build successfully
-2. Update any relevant documentation
-3. Write a clear commit message
-4. Create a pull request with a descriptive title
-5. Wait for review and address any feedback
-
-## Code of Conduct
-
-This project follows a code of conduct to ensure a welcoming environment for all contributors. By participating, you agree to:
-
-- Be respectful and inclusive
-- Focus on constructive feedback
-- Accept responsibility for mistakes
-- Show empathy towards other contributors
-
-## Questions?
-
-If you have questions about contributing, feel free to [open an issue](https://github.com/gomoku-app/gomoku-site/issues) or contact the maintainers.
+- 面向普通用户：不写实现细节（框架、引擎、库名），只描述「能做什么、怎么用」
+- 首页文案写在 `docs/<lang>/index.md` 的 frontmatter；指南页正文用 Markdown
+- 商店链接与邮箱只改 `docs/.vitepress/theme/site.ts`
+- 新增语言需同时更新 `config.ts` 与 `theme/locale.ts`
+- 提交前运行 `pnpm docs:build` 确认能正常构建

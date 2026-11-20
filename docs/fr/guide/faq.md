@@ -1,41 +1,31 @@
-# FAQ
+# Questions fréquentes
 
-**Q : Qu'est-ce que Reminder ?**
+Des réponses rapides sur Persim.
 
-R : Une application de rappels sereine et centrée sur le local pour macOS, avec un compagnon de bureau qui grandit à mesure que vous terminez vos rappels et maintenez une série. La version 2.0.0 est une refonte native en Rust + GPUI.
+### Persim est-il gratuit ?
 
-**Q : Reminder est-il gratuit ?**
+Les fonctions de navigation de base sont gratuites. Certaines fonctions avancées sont débloquées par un achat intégré ; la version gratuite affiche un petit badge dans la barre d'onglets.
 
-R : Oui. L'application et le compagnon British Shorthair sont gratuits. Les autres compagnons sont des achats intégrés facultatifs : $3.99 chacun, ou $19.99 pour l'All Pets Pack. Aucune fonctionnalité de rappel ne nécessite d'achat.
+### Quels systèmes sont compatibles ?
 
-**Q : Ai-je besoin d'un compte ?**
+Persim est conçu pour macOS 12 ou supérieur, sur Apple Silicon et Intel.
 
-R : Non. Il n'y a ni connexion, ni compte, ni synchronisation dans le cloud. Vos données restent sur votre Mac.
+### Mes données sont-elles envoyées ?
 
-**Q : L'application fonctionne-t-elle hors ligne ?**
+Aucun compte n'est nécessaire : historique, favoris, sessions et téléchargements restent sur votre Mac. Seules les fonctions qui nécessitent le réseau — comme la mise à jour d'un abonnement — se connectent à Internet.
 
-R : Oui. Les rappels, les notes, les statistiques et les animations des compagnons fonctionnent tous hors ligne. Seul le téléchargement d'un pack de compagnons nouvellement acheté nécessite Internet.
+### Comment importer les favoris d'un autre navigateur ?
 
-**Q : Quelles versions de macOS sont prises en charge ?**
+Exportez-les au format HTML depuis Chrome ou Edge, puis utilisez « Importer HTML » dans le gestionnaire de Persim. Dossiers et liens en double sont traités automatiquement.
 
-R : macOS 12 Monterey ou version ultérieure, sur les Mac Apple Silicon (série M) et Intel.
+### Comment enregistrer une vidéo ?
 
-**Q : Quelles langues l'application prend-elle en charge ?**
+Ouvrez le panneau médias, sélectionnez une vidéo détectée et téléchargez-la. Les fragments sont réunis en un MP4 que vous ouvrez avec votre application habituelle.
 
-R : 25 langues d'interface, dont l'anglais, le chinois simplifié et traditionnel, le japonais, l'allemand, l'espagnol et le français. Les thèmes clair et sombre suivent votre système.
+### Comment changer de langue ?
 
-**Q : Quels compagnons sont disponibles ?**
+Ouvrez `persim://settings` → **Général** → **Langue**. 25 langues sont proposées ; rouvrez la fenêtre pour voir le changement.
 
-R : British Shorthair (gratuit), Corgi, Husky, Ragdoll Cat et Shiba Inu ($3.99 chacun), plus l'All Pets Pack à $19.99. Voir [Compagnons et achats intégrés](./pets.md).
+### Une autre question ?
 
-**Q : Comment restaurer un achat ?**
-
-R : Ouvrez la boutique de compagnons et cliquez sur **Restaurer les achats** alors que vous êtes connecté avec le même identifiant Apple.
-
-**Q : Où mes données sont-elles stockées ?**
-
-R : Localement, dans le conteneur de l'application. Voir [Choix de confidentialité](./privacy-choices.md).
-
-**Q : Comment signaler un bug ou proposer une fonctionnalité ?**
-
-R : Ouvrez un ticket dans le [dépôt du projet](https://github.com/petreminder/reminder) ou écrivez à [reminder@w3cub.com](mailto:reminder@w3cub.com).
+Écrivez à **persim@w3cub.com** en expliquant ce que vous souhaitez faire.

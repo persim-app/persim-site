@@ -3,8 +3,8 @@
     <div class="nav-container">
       <div class="nav-brand">
         <VPLink :href="homeLink" class="brand-link">
-          <img src="/logo.png" alt="Reminder" class="brand-logo" />
-          <span class="brand-text">Reminder</span>
+          <img src="/logo.png" alt="Persim" class="brand-logo" />
+          <span class="brand-text">Persim</span>
         </VPLink>
       </div>
 
@@ -13,6 +13,7 @@
         <div class="nav-inline">
           <VPNavBarMenu />
           <VPNavBarTranslations class="nav-lang" />
+          <AccentPicker class="nav-accent" />
         </div>
 
         <!-- Mobile: a "more" button that opens the menu panel -->
@@ -64,6 +65,22 @@
               @click="close"
             >{{ l.text }}</a>
           </div>
+
+          <div class="panel-accents">
+            <span class="panel-langs-title">{{ accentLabel }}</span>
+            <button
+              v-for="(accent, index) in ACCENTS"
+              :key="accent.value"
+              type="button"
+              class="panel-accent"
+              :class="{ active: activeAccent === accent.value }"
+              :style="{ backgroundColor: accent.value }"
+              :title="accentNames[index] || accent.name"
+              :aria-label="accentNames[index] || accent.name"
+              :aria-pressed="activeAccent === accent.value"
+              @click="applyAccent(accent.value)"
+            ></button>
+          </div>
         </div>
       </div>
     </transition>
@@ -77,6 +94,9 @@ import { VPLink } from 'vitepress/theme'
 import VPNavBarMenu from 'vitepress/dist/client/theme-default/components/VPNavBarMenu.vue'
 import VPNavBarTranslations from 'vitepress/dist/client/theme-default/components/VPNavBarTranslations.vue'
 import VPSwitchAppearance from 'vitepress/dist/client/theme-default/components/VPSwitchAppearance.vue'
+import AccentPicker from './AccentPicker.vue'
+import { ACCENTS } from './site'
+import { activeAccent, applyAccent } from './accent'
 // localeLink no longer needed — nav links are already prefixed in config.ts
 
 const { lang, theme, site } = useData()
@@ -101,12 +121,13 @@ const navItems = computed(() =>
 )
 
 const langMenuLabel = computed(() => theme.value.langMenuLabel || 'Language')
+const accentLabel = computed(() => (theme.value as any).accentLabel || 'Accent colour')
+const accentNames = computed(() => (theme.value as any).accentNames || [])
 
 const currentLang = computed(() => {
   const l = site.value.locales[lang.value]
   return { label: (l && l.label) || 'English' }
 })
-
 // Build the language list from the configured locales, keeping the user on the
 // same relative path when they switch language.
 function stripLangPrefix(p: string): string {
@@ -269,6 +290,26 @@ onUnmounted(() => {
   color: #fff;
   border-color: var(--vp-c-brand-1);
 }
+
+.panel-accents {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding-top: 14px;
+}
+.panel-accent {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 2px solid var(--vp-c-bg);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--vp-c-divider);
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.panel-accent:hover { transform: scale(1.12); }
+.panel-accent.active { box-shadow: 0 0 0 2px var(--vp-c-brand-1); }
 
 .panel-enter-active, .panel-leave-active { transition: opacity 0.18s ease, transform 0.18s ease; }
 .panel-enter-from, .panel-leave-to { opacity: 0; transform: translateY(-8px); }

@@ -3,6 +3,7 @@
     <div class="footer-container">
       <div class="footer-content">
         <div class="footer-brand">
+          <img src="/logo.png" alt="" class="footer-logo-img" />
           <div class="footer-logo">{{ siteTitle }}</div>
           <p class="footer-tagline">{{ footer?.message }}</p>
         </div>
@@ -30,7 +31,7 @@ import { computed } from 'vue'
 import { useData } from 'vitepress'
 
 const { theme } = useData()
-const siteTitle = computed(() => theme.value.siteTitle ?? 'Reminder')
+const siteTitle = computed(() => theme.value.siteTitle ?? 'Persim')
 
 interface FooterItem { text: string; link: string }
 interface FooterGroup { text: string; items: FooterItem[] }
@@ -46,10 +47,11 @@ const footer = computed<FooterConfig | undefined>(
 </script>
 
 <style scoped>
+/* Dark footer, matching the reminder sites: charcoal body, near-black base. */
 .footer {
   background: #1a1a1a;
   color: #ffffff;
-  padding: 80px 0 40px;
+  padding: 80px 0 36px;
 }
 
 .footer-container {
@@ -62,11 +64,19 @@ const footer = computed<FooterConfig | undefined>(
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 80px;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
+}
+
+.footer-logo-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  display: block;
+  margin-bottom: 14px;
 }
 
 .footer-brand .footer-logo {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 12px;
   color: #ffffff;
@@ -75,7 +85,8 @@ const footer = computed<FooterConfig | undefined>(
 .footer-tagline {
   color: #cccccc;
   margin: 0;
-  font-size: 1rem;
+  font-size: .95rem;
+  line-height: 1.7;
 }
 
 .footer-links {
@@ -85,9 +96,9 @@ const footer = computed<FooterConfig | undefined>(
 }
 
 .footer-heading {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0 0 20px;
+  font-size: .95rem;
+  font-weight: 650;
+  margin: 0 0 18px;
   color: #ffffff;
 }
 
@@ -95,24 +106,23 @@ const footer = computed<FooterConfig | undefined>(
   display: block;
   color: #cccccc;
   text-decoration: none;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
+  font-size: .9rem;
   transition: color 0.2s;
 }
 
-.footer-link:hover {
-  color: #ffffff;
-}
+.footer-link:hover { color: var(--vp-c-brand-1); }
 
 .footer-bottom {
   border-top: 1px solid #333333;
-  padding-top: 40px;
+  padding-top: 32px;
   text-align: center;
 }
 
 .footer-copyright {
   margin: 0;
   color: #999999;
-  font-size: 0.9rem;
+  font-size: .85rem;
 }
 
 @media (max-width: 1024px) {
@@ -123,14 +133,8 @@ const footer = computed<FooterConfig | undefined>(
 }
 
 @media (max-width: 768px) {
-  .footer {
-    padding: 60px 0 30px;
-  }
-
-  .footer-content {
-    gap: 32px;
-  }
-
+  .footer { padding: 60px 0 30px; }
+  .footer-content { gap: 32px; }
   .footer-links {
     grid-template-columns: 1fr 1fr;
     gap: 28px;

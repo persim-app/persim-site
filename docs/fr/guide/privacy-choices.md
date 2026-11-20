@@ -1,35 +1,27 @@
 # Choix de confidentialité
 
-Reminder stocke tout localement : il n'existe donc aucun profil côté serveur à consulter, télécharger ou supprimer. Vous gardez le contrôle directement sur votre Mac.
+Des moyens simples de garder le contrôle.
 
-## Vos données restent locales
+## Naviguer sans traces
 
-- Rappels, listes, notes, étiquettes et sous-tâches
-- Statistiques, séries et succès
-- Réglages, raccourcis et packs de compagnons téléchargés
+Utilisez une fenêtre privée (⌘⇧N). Elle n'écrit rien dans l'historique, ne mémorise pas la session, et ses onglets disparaissent à la fermeture.
 
-Nous ne collectons, ne vendons ni ne partageons aucune information personnelle, et nous n'utilisons aucun service d'analyse ou de publicité tiers.
+## Effacer ce qui est enregistré
 
-## Gérer ou supprimer vos données
+Supprimez les cookies et les données de sites depuis le gestionnaire de cookies des réglages. L'historique et les téléchargements peuvent aussi être effacés au même endroit.
 
-- Supprimez des rappels, des listes ou des notes individuellement dans l'application
-- Exportez vos données depuis l'application avant de les supprimer, si vous souhaitez en conserver une copie
-- Supprimez tout en quittant Reminder puis en effaçant son conteneur :
+## Décider ce que chaque site peut faire
 
-```bash
-rm -rf ~/Library/Containers/com.w3cub.reminder
-```
+Caméra, micro et accès aux fichiers sont mémorisés par site. Autorisez les sites de confiance et refusez les autres dans les réglages. Les fenêtres surgissantes ne s'ouvrent que sur les sites autorisés.
 
-Les versions de développement peuvent stocker des données en dehors du conteneur ; consultez **Réglages → Général → Dossier de données** pour connaître le chemin exact.
+## Contrôler les fonctions en arrière-plan
 
-## Fonctionnalités réseau facultatives
+Activez ou désactivez les abonnements de filtrage à tout moment depuis les réglages. Désactivé, aucun filtre n'est téléchargé.
 
-- Le catalogue de la boutique et le téléchargement des compagnons ne sont utilisés que lorsque vous ouvrez la boutique ou achetez un compagnon
-- Les commentaires ne sont envoyés que lorsque vous soumettez explicitement le formulaire intégré
-- La synchronisation dans le cloud et les comptes n'existent pas dans Reminder : il n'y a donc rien à désactiver
+## Choisir votre moteur de recherche
 
-## Achats intégrés
+Définissez votre moteur par défaut dans les réglages. Les suggestions proviennent du moteur choisi.
 
-L'achat et la restauration sont gérés par Apple. Pour consulter ou gérer l'historique de vos achats, utilisez le Mac App Store avec votre identifiant Apple. Pour débloquer des compagnons sur un nouveau Mac, utilisez **Restaurer les achats** dans la boutique de compagnons.
+## Une question
 
-Une question ? Écrivez à [reminder@w3cub.com](mailto:reminder@w3cub.com) ou lisez la [Politique de confidentialité](./privacy.md).
+Écrivez à **persim@w3cub.com** pour en savoir plus sur le traitement de vos données.

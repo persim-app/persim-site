@@ -1,35 +1,23 @@
 # Términos del servicio
 
-_Última actualización: 2026-11-16_
+Las condiciones para usar Persim.
 
-Estos Términos rigen el uso de Reminder. Al descargar, instalar o utilizar la aplicación, usted acepta dichos Términos. Si no está de acuerdo, no utilice la aplicación.
+## Uso de la app
 
-## Licencia
+Persim se ofrece para uso personal. Puedes descargarlo y usarlo en Macs que te pertenezcan o que estés autorizado a usar.
 
-Reminder se ofrece conforme a los términos de licencia incluidos en cada versión. Usted recibe una licencia limitada, no exclusiva e intransferible para utilizar la aplicación en su Mac de acuerdo con dichos términos.
+## Funciones gratuitas y de pago
 
-## Uso local-first
+Las funciones básicas de navegación son gratuitas. Algunas capacidades avanzadas se desbloquean con una compra integrada. La versión gratuita muestra una pequeña insignia en la barra de pestañas; la compra la elimina.
 
-Reminder es una aplicación que funciona preferentemente sin conexión. Los recordatorios, las notas, los ajustes y los paquetes de mascotas adquiridos se almacenan localmente en su dispositivo. No existe ninguna cuenta ni ningún servicio en la nube proporcionado por nosotros.
+## Contenido de terceros
 
-## Compras integradas
-
-Los paquetes de mascotas cosméticos opcionales se venden a través de la Mac App Store. Todos los pagos los procesa Apple; nosotros no tratamos información de pago. Las compras pueden restaurarse en otro Mac con el mismo Apple ID. Los reembolsos los gestiona Apple según sus propias políticas.
-
-## Sus responsabilidades
-
-- Utilice Reminder de forma lícita y conforme a la normativa aplicable
-- No realice ingeniería inversa, redistribuya ni revenda la aplicación o los paquetes de mascotas, salvo que lo permita la licencia
-- Realice sus propias copias de seguridad de los datos que le importen
-
-## Exención de responsabilidad
-
-Reminder se ofrece «tal cual», sin garantías de ningún tipo. En la máxima medida permitida por la ley, los responsables del proyecto renuncian a toda garantía, expresa o implícita, incluidas las de comerciabilidad e idoneidad para un fin determinado. No nos hacemos responsables de los recordatorios perdidos ni de la pérdida de datos derivada de fallos del dispositivo, cambios del sistema operativo o la eliminación de datos locales.
+Los sitios, suscripciones y userscripts que usas a través de Persim son proporcionados por sus propios autores. Persim no se hace responsable de su contenido ni de su disponibilidad.
 
 ## Cambios
 
-Podemos actualizar estos Términos a medida que la aplicación evolucione. La versión vigente estará siempre disponible en esta página.
+Las funciones y estos términos pueden cambiar con el tiempo. La versión publicada en este sitio es la vigente.
 
 ## Contacto
 
-[reminder@w3cub.com](mailto:reminder@w3cub.com)
+Consultas sobre estos términos: **persim@w3cub.com**.

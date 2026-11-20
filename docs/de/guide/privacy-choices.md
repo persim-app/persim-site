@@ -1,35 +1,27 @@
-# Datenschutzoptionen
+# Datenschutz-Optionen
 
-Reminder speichert alles lokal, daher gibt es kein serverseitiges Profil, auf das zugegriffen, das heruntergeladen oder gelöscht werden könnte. Sie behalten die Kontrolle direkt auf Ihrem Mac.
+Einfache Wege, die Kontrolle zu behalten.
 
-## Ihre Daten bleiben lokal
+## Surfen ohne Spuren
 
-- Erinnerungen, Listen, Notizen, Tags und Teilaufgaben
-- Statistiken, Serien und Erfolge
-- Einstellungen, Tastenkürzel und heruntergeladene Haustier-Pakete
+Nutze ein privates Fenster (⌘⇧N). Es schreibt nichts in den Verlauf, merkt sich keine Sitzung und seine Tabs verschwinden beim Schließen.
 
-Wir erheben, verkaufen oder teilen keine personenbezogenen Informationen und nutzen keine Analysedienste oder Werbedienste Dritter.
+## Gespeichertes löschen
 
-## Daten verwalten oder entfernen
+Entferne Cookies und Websitedaten über den Cookie-Manager in den Einstellungen. Verlauf und Downloads lassen sich dort ebenfalls löschen.
 
-- Löschen Sie einzelne Erinnerungen, Listen oder Notizen in der App
-- Exportieren Sie Ihre Daten vor dem Entfernen aus der App, wenn Sie eine Kopie möchten
-- Entfernen Sie alles, indem Sie Reminder beenden und seinen Container löschen:
+## Pro Website entscheiden
 
-```bash
-rm -rf ~/Library/Containers/com.w3cub.reminder
-```
+Kamera, Mikrofon und Dateizugriff werden pro Website gemerkt. Erlaube vertrauten Sites und lehne andere in den Einstellungen ab. Pop-ups öffnen sich nur auf erlaubten Sites.
 
-Entwicklungs-Builds speichern Daten möglicherweise außerhalb des Containers; den genauen Pfad finden Sie unter **Einstellungen → Allgemein → Datenordner**.
+## Hintergrundfunktionen steuern
 
-## Optionale Netzwerkfunktionen
+Schalte Abonnements zur Werbeblockierung in den Einstellungen jederzeit ein oder aus. Ist eines aus, werden keine Regeln geladen.
 
-- Katalog und Downloads des Haustier-Shops werden nur genutzt, wenn Sie den Shop öffnen oder ein Haustier kaufen
-- Feedback wird nur gesendet, wenn Sie das Formular in der App ausdrücklich absenden
-- Cloud-Synchronisierung und Konten gibt es in Reminder nicht, daher müssen Sie nichts abwählen
+## Suchmaschine wählen
 
-## In-App-Käufe
+Lege in den Einstellungen deine Standardsuchmaschine fest. Suchvorschläge stammen von der Engine deiner Wahl.
 
-Kauf und Wiederherstellung werden von Apple abgewickelt. Um den Kaufverlauf einzusehen oder zu verwalten, nutzen Sie den Mac App Store mit Ihrer Apple ID. Um Haustiere auf einem neuen Mac freizuschalten, verwenden Sie **Käufe wiederherstellen** im Haustier-Shop.
+## Fragen
 
-Fragen? Schreiben Sie an [reminder@w3cub.com](mailto:reminder@w3cub.com) oder lesen Sie die [Datenschutzerklärung](./privacy.md).
+Schreibe an **persim@w3cub.com**, wenn du mehr über den Umgang mit deinen Daten wissen möchtest.

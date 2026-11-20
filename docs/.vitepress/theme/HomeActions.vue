@@ -1,73 +1,82 @@
 <script setup lang="ts">
 import { withBase } from 'vitepress'
+import { useData } from 'vitepress'
+import { localeLink } from './locale'
+import { computed } from 'vue'
+
+type Action = { text: string; link: string; theme?: 'brand' | 'alt'; external?: boolean }
+
+const props = defineProps<{ actions?: Action[] }>()
+const { lang } = useData()
+
+function href(action: Action) {
+  if (action.external || /^(https?:|mailto:)/.test(action.link)) return action.link
+  return withBase(localeLink(action.link, lang.value))
+}
+const items = computed(() => props.actions ?? [])
 </script>
 
 <template>
-  <div class="home-badge-row">
+  <div class="home-actions">
     <a
-      href="https://apps.apple.com/app/id6776577400"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="store-badge-link"
-      aria-label="Download Reminder on the Mac App Store"
+      v-for="action in items"
+      :key="action.text"
+      :href="href(action)"
+      :class="['action-btn', action.theme === 'alt' ? 'alt' : 'brand']"
+      :target="action.external ? '_blank' : undefined"
+      :rel="action.external ? 'noopener noreferrer' : undefined"
     >
-      <img
-        :src="withBase('/badges/Mac-App-Store.png')"
-        alt="Download on the Mac App Store"
-        class="store-badge"
-        width="156"
-        height="46"
-      />
-    </a>
-    <a
-      href="https://www.producthunt.com/products/pet-reminder?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-pet-reminder"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="store-badge-link ph-link"
-      aria-label="Reminder on Product Hunt"
-    >
-      <img
-        src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1188444&theme=light"
-        alt="Reminder — Reminders that grow with you | Product Hunt"
-        class="store-badge ph-badge"
-        width="250"
-        height="54"
-      />
+      <svg v-if="action.theme !== 'alt'" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 3v12m0 0 4-4m-4 4-4-4" />
+        <path d="M4 17v3h16v-3" />
+      </svg>
+      {{ action.text }}
     </a>
   </div>
 </template>
 
 <style scoped>
-.home-badge-row {
+.home-actions {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 32px;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
 }
-
-.store-badge-link {
+.action-btn {
   display: inline-flex;
-  border-radius: 10px;
-  transition: opacity 0.18s ease, transform 0.18s ease;
-  outline-offset: 3px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-width: 148px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
-
-.store-badge-link:hover {
-  opacity: 0.82;
-  transform: translateY(-1px);
+.action-btn.brand {
+  background: var(--vp-c-brand-1);
+  color: #fff;
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--vp-c-brand-1) 25%, transparent);
 }
-
-.store-badge {
-  display: block;
-  height: 46px;
-  width: auto;
+.action-btn.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px color-mix(in srgb, var(--vp-c-brand-1) 32%, transparent);
 }
-
-.ph-badge {
-  height: 46px;
-  border-radius: 10px;
-  background: #ffffff;
+.action-btn.alt {
+  background: var(--ah-card-bg);
+  color: var(--vp-c-text-1);
+  border: 1px solid var(--vp-c-divider);
+}
+.action-btn.alt:hover {
+  transform: translateY(-2px);
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+@media (max-width: 480px) {
+  .action-btn { width: 100%; max-width: 300px; }
 }
 </style>

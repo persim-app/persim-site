@@ -1,48 +1,30 @@
 # Fehlerbehebung
 
-## Erinnerungen kommen nicht an
+Lösungen für häufige Probleme.
 
-1. Öffnen Sie **Systemeinstellungen → Mitteilungen → Reminder** und prüfen Sie, ob Mitteilungen erlaubt sind
-2. Stellen Sie sicher, dass Erinnerungen im Menüleisten-Menü nicht pausiert sind
-3. Vergewissern Sie sich, dass Ihr Mac zur geplanten Zeit nicht im Ruhezustand ist
-4. Beenden Sie Reminder und öffnen Sie es erneut
+## Eine Seite lädt nicht
 
-Wurde die Abfrage beim ersten Start abgelehnt, können Mitteilungen dauerhaft deaktiviert bleiben, bis Sie sie in den Systemeinstellungen wieder aktivieren.
+- Prüfe, ob andere Seiten funktionieren, und lade mit ⌘R neu.
+- Wenn eine Werbeblockier-Liste aktiv ist, pausiere sie kurz, um zu sehen, ob sie die Seite blockiert.
+- Versuche ein privates Fenster (⌘⇧N). Funktioniert die Seite dort, lösche die Cookies der Seite in den Einstellungen.
 
-## Das Haustier erscheint nicht
+## Download bleibt hängen oder ist unvollständig
 
-- Prüfen Sie, ob das Haustier im Menüleisten-Menü sichtbar ist (Haustier ein-/ausblenden)
-- Stellen Sie sicher, dass unter **Einstellungen → Haustier** ein Begleiter ausgewählt ist
-- Prüfen Sie, ob der Download des Haustier-Pakets abgeschlossen ist; öffnen Sie den Haustier-Shop erneut und versuchen Sie **Käufe wiederherstellen**
-- Bei einem externen Display oder einer Vollbild-App verschieben Sie das Haustier über das Menüleisten-Menü zurück auf den Hauptbildschirm
+- Öffne das Download-Panel, pausiere den Vorgang und setze ihn fort.
+- Lösche bei einem fehlgeschlagenen Video-Download die unvollständige Datei und versuche es erneut. Geteilte Videos werden zu einer MP4 zusammengefügt; bei einem Fehler bleiben die Teile im Download-Ordner.
 
-## Ein Kauf wird nicht freigeschaltet
+## Lesezeichen wurden nicht importiert
 
-1. Öffnen Sie den Haustier-Shop und tippen Sie auf **Käufe wiederherstellen**
-2. Vergewissern Sie sich, dass Sie im Mac App Store mit derselben Apple ID angemeldet sind
-3. Prüfen Sie Ihre Netzwerkverbindung und versuchen Sie es erneut
-4. Schlägt es weiterhin fehl, wenden Sie sich mit dem Produktnamen an [reminder@w3cub.com](mailto:reminder@w3cub.com)
+Exportiere zuerst die Lesezeichen deines alten Browsers als HTML-Datei und wähle dann in Persim **HTML importieren** im Lesezeichen-Manager. Ordner und doppelte Links werden automatisch sortiert.
 
-## Ein Haustier-Paket lässt sich nicht herunterladen
+## Videos werden nicht erkannt
 
-Die App prüft jedes Paket mit einer SHA-256-Prüfsumme und wiederholt einen fehlgeschlagenen Download einmal. Ein dauerhafter Fehler deutet meist auf eine instabile Verbindung hin – versuchen Sie es erneut in einem stabilen Netzwerk.
+Nicht jede Website stellt eine speicherbare Videodatei bereit. Öffne das Medien-Panel auf der Seite. Wenn nichts erscheint, lässt sich das Video dort nicht direkt speichern.
 
-## Die App lässt sich nicht öffnen
+## Die App ist langsam
 
-1. Starten Sie Ihren Mac neu
-2. Installieren Sie die App aus dem Mac App Store neu (lokale Daten liegen außerhalb des App-Pakets)
-3. Blockiert Gatekeeper einen GitHub-Build, nutzen Sie **Systemeinstellungen → Datenschutz & Sicherheit → Trotzdem öffnen**
+Schließe nicht mehr benötigte Tabs oder deaktiviere ein Abo zur Werbeblockierung. Website-Berechtigungen kannst du in den Einstellungen prüfen.
 
-## Wo finde ich Protokolle und Daten?
+## Immer noch kein Erfolg?
 
-Sandbox-Builds speichern Daten in:
-
-```
-~/Library/Containers/com.w3cub.reminder/Data/Library/Application Support/com.w3cub.reminder/
-```
-
-Über **Einstellungen → Allgemein → Protokollordner** können Sie den Ordner direkt öffnen.
-
-## Nichts geholfen?
-
-Eröffnen Sie ein Issue im [Projekt-Repository](https://github.com/petreminder/reminder) mit Ihrer macOS-Version, der Reminder-Version, den Schritten zur Reproduktion und den Protokollen, oder schreiben Sie an [reminder@w3cub.com](mailto:reminder@w3cub.com).
+Schreibe an **persim@w3cub.com** und beschreibe, was du tun wolltest — am besten mit einem Screenshot.

@@ -1,48 +1,27 @@
-# 安装
+# 安装 Persim
 
-Reminder 通过 Mac App Store 面向 macOS 提供。当前版本为 2.0.0。
+下载、设为默认浏览器，再把书签带过来。
 
-## 下载
+## 下载与安装
 
-- **[Mac App Store 上的 Reminder](https://apps.apple.com/app/id6776577400)**（推荐 — 自动更新、沙盒构建）
-- **[GitHub Releases](https://github.com/petreminder/reminder/releases)** — 直接提供 `.dmg` 构建，不含自动更新
+1. 打开 [Mac App Store](https://apps.apple.com/app/id6835099132)，搜索 Persim。
+2. 下载完成后，把应用拖进「应用程序」文件夹；系统询问时确认即可。
+3. 想设为默认浏览器，打开「系统设置 → 默认网页浏览器」，选择 Persim。
 
-## 从 Mac App Store 安装
+需要 macOS 12 及以上，Apple Silicon 和 Intel 芯片都支持。
 
-1. 打开上方的 App Store 链接，或搜索 "Reminder"
-2. 点击 **获取**，再点击 **安装**
-3. 从「应用程序」或「启动台」启动 Reminder
+## 第一次打开
 
-## 从 GitHub Releases 安装
+- 在 `persim://settings` 的「常规」里选择外观、主色和书签栏显示方式。
+- 界面语言有 25 种；切换后重新打开窗口生效。
+- 新标签页已经放好常用网站和 AI 直达入口，直接用即可。
 
-1. 下载最新的 `.dmg`
-2. 双击挂载
-3. 将 `Reminder.app` 拖入 `Applications`
-4. 推出磁盘映像并打开 Reminder
+## 把书签带过来
 
-如果 macOS 阻止打开应用，请前往 **系统设置 → 隐私与安全性**，点击 **仍要打开**；或右键点击应用并选择 **打开**。
+1. 在 Chrome 或 Edge 里把书签导出成 HTML 文件。
+2. 打开 Persim 的书签管理器，选择「导入 HTML」并选中文件。
+3. 多层文件夹会还原，重复网址会自动跳过；书签栏还可以随时拖动排序。
 
-## 首次启动
+## 后续更新
 
-当 macOS 询问时，请允许 **通知**——提醒正是通过它送达的。除此之外无需其他操作：没有账户、没有登录，也没有演示凭据。你的英国短毛猫伙伴从首次启动起就已装好、随时可用。
-
-## 更新
-
-- **Mac App Store**：自动安装更新
-- **GitHub Releases**：下载新构建，替换 `Applications` 中的应用
-
-提醒与宠物数据存放在应用包之外，因此更新不会将其删除。
-
-## 卸载
-
-1. 退出 Reminder（从托盘菜单，或按 `Cmd+Q`）
-2. 将 `Reminder.app` 移到废纸篓
-3. 可选：删除本地数据
-
-```bash
-rm -rf ~/Library/Containers/com.w3cub.reminder
-```
-
-## 故障排查
-
-如果安装失败，请参阅 [故障排查](./troubleshooting.md)，或发邮件至 [reminder@w3cub.com](mailto:reminder@w3cub.com)。
+在 Mac App Store 的「更新」里获取新版本，已有数据会保留。

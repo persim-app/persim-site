@@ -1,55 +1,42 @@
-# Reminder Website
+# Persim Website
 
-Official website for **Reminder** — a calm, local-first macOS reminder app with a
-desktop pet companion that grows with your streak. Current app release: **2.0.0**.
+官网：[https://persim.w3cub.com](https://persim.w3cub.com)
 
-Live at https://reminder.w3cub.com
+Persim 柿子浏览器是一款清爽、快速的 Mac 浏览器。本站用 VitePress 构建，
+提供 **7 种语言**（English、简体中文、繁體中文、日本語、Deutsch、Español、Français）
+与浅色 / 深色主题；应用本身支持 25 种界面语言。
 
-## Highlights
+## 内容在哪里
 
-- VitePress site with a fully data-driven custom homepage
-- **7 languages**: English, 简体中文, 繁體中文, 日本語, Deutsch, Español, Français
-- Light / dark appearance switch and language switcher in the shared navigation
-- Localized nav, sidebar, footer, homepage and every guide / legal page
-- Hero and screenshots from the 2.0.0 App Store artwork
-- Pet store pricing kept in sync with the app's `output/store/iap-products.json`
-  (British Shorthair free, four pets at $3.99, All Pets Pack $19.99)
-
-## Where content lives
-
-| Path | Purpose |
+| 路径 | 用途 |
 |---|---|
-| `docs/index.md`, `docs/<lang>/index.md` | Homepage content (YAML frontmatter) |
-| `docs/.vitepress/config.ts` | Locales, nav / sidebar / footer strings, SEO |
-| `docs/.vitepress/theme/` | `AdvancedHome.vue`, `SiteNav.vue`, `SiteFooter.vue`, `HomeActions.vue`, `locale.ts`, `custom.css` |
-| `docs/guide/`, `docs/<lang>/guide/` | Guides and legal pages (relative links) |
-| `docs/public/` | Logo, pet images, hero, screenshots, OG preview |
+| `docs/index.md`、`docs/<lang>/index.md` | 首页全部文案（frontmatter 驱动） |
+| `docs/.vitepress/config.ts` | 语言、导航、侧栏、页脚、SEO |
+| `docs/.vitepress/theme/site.ts` | **产品链接与邮箱的唯一来源**（商店链接先改这里） |
+| `docs/.vitepress/theme/` | `AdvancedHome.vue`、`SiteNav.vue`、`SiteFooter.vue`、`HomeActions.vue`、`custom.css` |
+| `docs/guide/`、`docs/<lang>/guide/` | 指南页（使用相对链接，天然跟随语言前缀） |
+| `docs/public/` | Logo、两张浏览器截图、图标、OG 预览图 |
 
-> Homepage internal links are written as root paths (`/guide/...`) and get their
-> locale prefix from `localeLink()` in the component. Guide pages use relative
-> links so they resolve under any language prefix without edits.
+首页内部链接写根路径（如 `/guide/faq`），由 `localeLink()` 自动加语言前缀；
+指南页之间用相对链接，无需逐语言修改。
 
-## Development
+主色：浏览器默认蓝色 `#3b82f6`。首页「选一种主色调」的色块会实时改写
+`--vp-c-brand-1`，与设置页里的六个色点顺序一致。
+
+## 开发
 
 ```bash
 pnpm install
 pnpm docs:dev      # http://localhost:5173
-pnpm docs:build    # docs/.vitepress/dist
+pnpm docs:build    # 产物在 docs/.vitepress/dist
 pnpm docs:preview
 ```
 
-## Deployment
+## 部署
 
-`deploy.sh` builds the site and publishes `docs/.vitepress/dist` to GitHub Pages;
-the `.github/workflows/deploy.yml` workflow does the same on push and writes the
-`CNAME` for `reminder.w3cub.com`.
+`pnpm docs:deploy` 或 GitHub Actions（推送 `main`）会构建并发布到 `gh-pages`，
+CNAME 为 `persim.w3cub.com`。
 
-## Updating prices or pets
+## 许可
 
-Edit the `pets` / `bundle` arrays in every `docs/<lang>/index.md` and the table in
-every `docs/<lang>/guide/pets.md`. Keep USD amounts identical across languages —
-StoreKit converts them to the buyer's local currency.
-
-## License
-
-Documentation is distributed under the repository LICENSE.
+文档遵循仓库 LICENSE。
